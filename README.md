@@ -40,7 +40,7 @@ Set the installed version to one of the tags set for a release.
 
 #### `branch`-based updates
 
-Set the installed version to to a datetime of one of the latest commits.  
+Set the installed version to a datetime of one of the latest commits.  
 A valid version would be: `2020-04-19T22:35:48Z`
 
 ### Running artisan commands
