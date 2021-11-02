@@ -26,22 +26,24 @@ $ php artisan vendor:publish --provider="Codedge\Updater\UpdaterServiceProvider"
  
 **توجه:** در وارد کردن نام مخزن گیت هاب در فایل  `config/self-updater.php` دقت لازم را داشته باشید.
 
-### :information_source: Setting the currently installed version
+### :information_source: تنظیم نسخه فعلی اپلیکیشن
 
-Before starting an update, make sure to set the version installed correctly.
-You're responsible to set the current version installed, either in the config file or better via the env variable `SELF_UPDATER_VERSION_INSTALLED`.
+قبل از شروع بروزرسانی توسط این پکیج باید مطمئن باشید که شماره نسخه فعلی درست تنظیم شده باشد.
+نسخه فعلی را می توانید در فایل کانفیک پکیج یا با استفاده از متغییر
+`SELF_UPDATER_VERSION_INSTALLED` در فایل env تنظیم کنید.
 
-#### `tag`-based updates
+#### `tag`بروز رسانی بر اساس 
 
-Set the installed version to one of the tags set for a release.
+نسخه فعلی نرم افزار را بر روی یکی از تگ هایی که در نسخه های ریلیز شده گیت هاب گذاشته اید تنظیم کنید. نرم افزار بصورت خودکار تمام تغییرات از نسخه تعریف شده به آخرین نسخه را بر عهده می گیرد.
 
-#### `branch`-based updates
+#### `branch`-بروز رسانی بر اساس
 
-Set the installed version to to a datetime of one of the latest commits.  
-A valid version would be: `2020-04-19T22:35:48Z`
+نسخه فعلی را بر اساس زمان با استاندار Datetime تعریف کنید. بصورت خودکار بعد از بروزرسانی به آخرین نسخه بروز خواهد شد.
+یک تاریخ معتبر به این صورت باید تعریف شود.: `2020-04-19T22:35:48Z`
 
-### Running artisan commands
+### اجرای فرمان آرتیسن
 Artisan commands can be run before or after the update process and can be configured in `config/self-updater.php`:
+لیستی از فرمان های آرتیسان درپکیج در دسترس است. که بعد یا قبل از آپدیت میتوانید استفاده کنید. 
 
 __Example:__
 ```php
