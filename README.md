@@ -39,7 +39,8 @@ $ php artisan vendor:publish --provider="Codedge\Updater\UpdaterServiceProvider"
 #### `branch`-بروز رسانی بر اساس
 
 نسخه فعلی را بر اساس زمان با استاندار Datetime تعریف کنید. بصورت خودکار بعد از بروزرسانی به آخرین نسخه بروز خواهد شد.
-یک تاریخ معتبر به این صورت باید تعریف شود.: `2020-04-19T22:35:48Z`
+یک تاریخ معتبر به این صورت باید تعریف شود :
+`2020-04-19T22:35:48Z`
 
 ### اجرای فرمان آرتیسن
 Artisan commands can be run before or after the update process and can be configured in `config/self-updater.php`:
