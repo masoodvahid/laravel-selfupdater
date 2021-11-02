@@ -1,4 +1,4 @@
-# Laravel Application Self-Updater
+# بروز رسان خودکار لاراول 
 
 [![Latest Stable Version](https://poser.pugx.org/codedge/laravel-selfupdater/v/stable?format=flat-square)](https://packagist.org/packages/codedge/laravel-selfupdater)
 [![Total Downloads](https://poser.pugx.org/codedge/laravel-selfupdater/downloads?format=flat-square)](https://packagist.org/packages/codedge/laravel-selfupdater)
@@ -7,27 +7,24 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dd836e58656b4e25b34b2a4ac8197142)](https://www.codacy.com/app/codedge/laravel-selfupdater?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codedge/laravel-selfupdater)
 [![codecov](https://codecov.io/gh/codedge/laravel-selfupdater/branch/master/graph/badge.svg)](https://codecov.io/gh/codedge/laravel-selfupdater)
 
-This package provides some basic methods to implement a self updating
-functionality for your Laravel 5 application. Already bundled are some
-methods to provide a self-update mechanism via Github.
+این پکیج با استفاده از تعدادی متودهای ساده امکان بروزرسانی خودکار اپلیکیشن لاراولی را 
+محیا می کند. در این پکیج از گیت هاب برای مرجع بروزرسانی استفاده می شود.
+[در واقع شما با بروزرسانی کدهای خود در گیت هاب به راحتی این امکان را دارید که بصورت فوری تمامی نسخه هایی که در حال کار هستند را بروزرسانی کنید]
 
-Usually you need this when distributing a self-hosted Laravel application
-that needs some updating mechanism without [Composer](https://getcomposer.org/).
-  
-## Install
+## نصب
 
-To install the latest version from the master using [Composer](https://getcomposer.org/):
+برای نصب آخرین نسخه از این پکیج با استفاده از کامپوزر از دستور زیر استفاده کنید [Composer](https://getcomposer.org/):
 ```sh
 $ composer require codedge/laravel-selfupdater
 ```
 
-## Configuration
-After installing the package you need to publish the configuration file via
+## تنظیمات
+بعد از نصب برای دسترسی به تنظیمات پکیج لازم است دستور زیر را اجرا کنید 
 ```sh
 $ php artisan vendor:publish --provider="Codedge\Updater\UpdaterServiceProvider"
 ```
  
-**Note:** Please enter correct value for vendor and repository name in your `config/self-updater.php` if you want to use Github as source for your updates.
+**توجه:** در وارد کردن نام مخزن گیت هاب در فایل  `config/self-updater.php` دقت لازم را داشته باشید.
 
 ### :information_source: Setting the currently installed version
 
